@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block title %} Request Demo {% endblock title %}
+{% block content %}
+
+<div class="container">
+	<div class="row request-a-demo">
+		{% if form.errors %}
+	        <div class="alert alert-danger">
+	            <strong>Please enter valid data</strong>
+	        </div>
+		{% endif %}
+		<div class="col-sm-12">
+			<h3 class="text-center xs-text-left">Request a demo</h3>
+			<div class="col-sm-7">
+				<p>Please complete the form below and a beyFlow specialist will contact you shortly.</p>
+				<form action="" method="POST">
+					{% csrf_token %}
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="col-sm-6 PL0">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="First name *" name="firstName" >
+								</div>
+							</div>
+							<div class="col-sm-6 PR0">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Last name *" name="lastName">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="col-sm-12">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Email *" name="email">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="col-sm-12">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Job title" name="jobTitle">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="col-sm-12">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Work phone number" name="workPhoneNumber">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="col-sm-12">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Company" name="company">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="col-sm-12">
+								<div class="form-group">
+									<textarea type="text" class="form-control" placeholder="Messsage *" rows="7" name="message"></textarea>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="checkbox">
+								<label>
+							    	<input type="checkbox" name="canReceiveMails"> Do you accept to receive mails from beyFlow?
+							    </label>
+							</div>	
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<button type="submit" class="btn btn-submit">SUBMIT</button>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="col-sm-5 hidden-xs">
+				<img src='{% static "image/requestDemo.jpg" %}' class="img-responsive" />
+			</div>
+		</div>
+	</div>
+</div>
+
+{% endblock content %}

@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block title %} Home {% endblock title %}
+{% block content %}
+
+<div class="banner">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="col-sm-6">
+						<img src='{% static "image/beyFLowMobile.png" %}' class="img-responsive">
+					</div>
+					<div class="col-sm-6 text-center">
+						<div class="banner-text">
+							<h2>Send funds to family and friends seconds not days</h2>
+						</div>
+						<a href="#">
+							<div class="banner-text-small">
+								<h3>Request a demo</h3>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+</div>
+
+<div class="navmenu">
+	<div class="container trasfers-main">
+		<div class="row">
+			<div class="col-sm-12 text-center">
+				<h3>HOW TRANSFERS ARE DONE</h3>
+				<img src='{% static  "image/transfers.png" %}' class="hidden-xs">
+			</div>
+			<div class="trasfers-main-width">
+				<div class="col-sm-3 text-center">
+					<img src='{% static "image/1.png" %}' class="img-responsive hidden-sm hidden-md hidden-lg">
+					<p>Users can deposit funds into their online accounts via a bey flow mobile cash teller or ATM.</p>
+				</div>
+				<div class="col-sm-3 text-center">
+					<img src= '{% static "image/2.png" %}' class="img-responsive hidden-sm hidden-md hidden-lg">
+					<p>Automatically, funds in the account will be converted from fiat currency into it's digital secured fiat form.</p>
+				</div>
+				<div class="col-sm-3 text-center">
+					<img src='{% static "image/3.png" %}' class="img-responsive hidden-sm hidden-md hidden-lg">
+					<p>Funds are immediately available for transfer. They choose another user to send their funds to and confirm transaction of sent amount.</p>
+				</div>
+				<div class="col-sm-3 text-center">
+					<img src='{% static "image/4.png" %}' class="img-responsive hidden-sm hidden-md hidden-lg">
+					<p>Said funds are now in beneficiary's account. Beneficiary of funds can find a mobile cash teller to withdraw from their account.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="how-beyflow container xs-text-center">
+	<div class="row">
+		<div class="col-sm-12">
+			<h3><span> &mdash;</span><span class="fixLine"> &mdash;</span> How we do it ?<span> &mdash;</span><span class="fixLine"> &mdash;</span></h3>
+			<p>Safer and more privacy-focused than most Blockchain technology platform providers.<br>
+			Guards sensitive ?nancial information, uses privacy innovations and uses several audit methods to prove ? at exchanges are fully backed and reserved.<br>
+			Makes distributions for ?at-to-?at exchanges, allows transactional Blockchain ledger queries and streamlines money transfers and allowing P2P money withdrawals.</p>
+			<h3><span> &mdash;</span><span class="fixLine"> &mdash;</span> Why we do it ?<span> &mdash;</span><span class="fixLine"> &mdash;</span></h3>
+			<p>Intentions are to augment indigenous money transfer services in the ASEAN region. <br>
+			BF Blockchain's digitally secured currency infrastructure makes exchanges more convenient, faster and more reliable than most solution currently available in the region.</p>
+		</div>
+		<div class="col-sm-12 PLR0">
+			<div class="col-sm-3">
+				<img src='{% static "image/screen1.png" %}' class="img-responsive hidden-xs">
+				<img src='{% static "image/screen1Mobile.png" %}' class="img-responsive hidden-sm hidden-md hidden-lg">
+			</div>
+			<div class="col-sm-3">
+				<img src='{% static "image/screen2.png" %}' class="img-responsive hidden-xs">
+				<img src='{% static "image/screen2Mobile.png" %}' class="img-responsive hidden-sm hidden-md hidden-lg">
+			</div>
+			<div class="col-sm-3">
+				<img src='{% static "image/screen3.png" %}' class="img-responsive hidden-xs">
+				<img src='{% static "image/screen3Mobile.png" %}' class="img-responsive hidden-sm hidden-md hidden-lg">
+			</div>
+			<div class="col-sm-3">
+				<img src='{% static "image/screen4.png" %}'  class="img-responsive hidden-xs">
+				<img src='{% static "image/screen4Mobile.png" %}' class="img-responsive hidden-sm hidden-md hidden-lg">
+			</div>
+		</div>
+	</div>
+</div>
+
+{% endblock content %}
