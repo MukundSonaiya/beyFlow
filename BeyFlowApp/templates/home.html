@@ -8,13 +8,14 @@
 			<div class="row">
 				<div class="col-sm-12">
 					<div class="col-sm-6">
-						<img src='{% static "image/beyFLowMobile.png" %}' class="img-responsive">
+						<img src='{% static "image/beyFLowMobile.png" %}' class="img-responsive hidden-xs">
+						<img src='{% static "image/beyFLowMobileFull.png" %}' class="img-responsive hidden-sm hidden-md hidden-lg">
 					</div>
 					<div class="col-sm-6 text-center">
 						<div class="banner-text">
 							<h2>Send funds to family and friends seconds not days</h2>
 						</div>
-						<a href="#">
+						<a href="{% url 'requestDemo' %}">
 							<div class="banner-text-small">
 								<h3>Request a demo</h3>
 							</div>

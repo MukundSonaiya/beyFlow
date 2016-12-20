@@ -6,6 +6,7 @@ a:hover, a:focus, a.active{ outline: none;}
 .btn-primary{ background: #16D472; color: #fff; font-weight: 500; box-shadow: 0px 0px 3px rgba(0,0,0,0.4); border-radius: 15px; padding: 8px 13px; text-transform: uppercase; width: 180px; border: none; margin-top: 12px; }
 .btn-primary:hover, .btn-primary.active, .btn-primary:focus{ background: #16D472; text-decoration: underline; color: #fff; transition: 0.2s all ease-in; }
 .banner{ background: url('../image/beyFlowBanner.jpg') no-repeat; background-size: cover; padding-top: 140px; }
+.banner .col-sm-6 img.hidden-sm{ margin: 0 auto; }
 .banner-text{ width: 350px; height: 350px; margin: 0 auto; background: rgba(0, 176, 240, 0.6); border-radius: 50%; position: relative; }
 .banner-text h2{ color: #fff; font-size: 42px; padding: 85px 10px; text-align: center; font-weight: 400; }
 .banner-text-small{ background: #fff; position: absolute; height: 125px; width: 125px; border-radius: 50%; bottom: -55px; right: 115px; }
@@ -32,7 +33,7 @@ a:hover, a:focus, a.active{ outline: none;}
 .footer .social a:hover{ text-decoration: underline;  }
 .footer .social img{ margin-right: 10px; }
 .copyright span, .copyright span a{ color: #fff; font-size: 14px; }
-.request-a-demo{ padding: 50px 0px; }
+.request-a-demo{ padding: 100px 0px; }
 .request-a-demo h3{ color: #00B0F0; margin-bottom: 20px; font-size: 32px; font-weight: 400; }
 .request-a-demo p{ font-size: 20px; font-weight: 300; color: #575252; }
 .request-a-demo form{ margin-top: 10px; }
@@ -53,13 +54,13 @@ a:hover, a:focus, a.active{ outline: none;}
 	.banner-text{ height: 250px; width: 250px; margin-top: 30px; }
 	.banner-text h2{ font-size: 24px; }
 	.banner-text-small{ right: -5px; bottom:-45px; }
-	.banner{ padding: 70px 0px; }
+	.banner{ padding: 100px 0px 70px 0px; }
 	.trasfers-main-width img{ margin: 0 auto;}
 	.trasfers-main-width p{ margin-bottom: 20px; }
 	h3 span{ display: none; }
 	.footer{ padding: 10px 0px; }
 	.footer h1{ font-size: 40px; }
-	.how-beyflow img{ margin-bottom: 20px; }
+	.how-beyflow img{ margin-bottom: 20px !important; margin: 0 auto; }
 	.footer .btn-default{ font-size: 16px; padding: 8px 20px; margin-top: 12px; margin-bottom: 30px; }
 	.xs-text-center{ text-align: center; }
 	.footer .col-sm-2.xs-text-center{ margin-top: 30px; }
@@ -69,6 +70,7 @@ a:hover, a:focus, a.active{ outline: none;}
 	.btn-submit{ margin-bottom: 20px; }
 	.xs-text-left{ text-align: left; }
 	h3.xs-text-left{ padding-left: 15px; }
+	.footer .col-md-5.col-sm-4 img{ margin: 0 auto; }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1001px)
