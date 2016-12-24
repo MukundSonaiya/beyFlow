@@ -14,6 +14,8 @@ a:hover, a:focus, a.active{ outline: none;}
 .banner-text-small:hover{ background: #fff; transition: 0.2s all ease-in; }
 .banner-text-small:hover h3{  color: #00b0f0; text-decoration: underline; }
 .trasfers-main{ padding: 30px 0px; color: #fff; }
+.trasfers-main img{ margin-top: 10px; }
+.trasfers-main p{ margin-top: 10px; }
 .trasfers-main h3{ padding-bottom: 15px; }
 .trasfers-main-width{ width: 1001px; margin: 0 auto; }
 .how-beyflow{ padding-top: 50px; } 
